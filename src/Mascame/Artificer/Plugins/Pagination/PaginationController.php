@@ -5,7 +5,6 @@ use Redirect;
 use Mascame\Artificer\Artificer;
 use Input;
 use Mascame\Artificer\Plugins\Pagination\PaginationPlugin as Pagination;
-use View;
 
 class PaginationController extends BaseModelController {
 

@@ -205,7 +205,7 @@ class Factory {
 
 	/**
 	 * @param $name
-	 * @param $value
+	 * @param string $value
 	 */
 	protected function setTypeReason($name, $value) {
 		$this->type_reason[$name] = $value;

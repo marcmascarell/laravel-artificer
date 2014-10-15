@@ -27,6 +27,9 @@ class FieldOption extends ModelOption {
 		return Option::has(self::$key . Model::getCurrent() . '.' . self::$subkey . '.' . $field . '.' . $key);
 	}
 
+	/**
+	 * @param string $key
+	 */
 	public static function set($key, $value, $field = null)
 	{
 		Option::set(self::$key . Model::getCurrent() . '.' . self::$subkey . '.' . $field . '.' . $key, $value);

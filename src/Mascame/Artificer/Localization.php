@@ -1,6 +1,5 @@
 <?php namespace Mascame\Artificer;
 
-use LaravelLocalization;
 use Str;
 use Mascame\Artificer\Options\AdminOption;
 
