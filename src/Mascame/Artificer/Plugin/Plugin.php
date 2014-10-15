@@ -102,7 +102,7 @@ abstract class Plugin implements PluginInterface {
 	}
 
 	/**
-	 * @return mixed
+	 * @return string
 	 */
 	public function getPluginShowName() {
 		return $this->name;
@@ -116,7 +116,7 @@ abstract class Plugin implements PluginInterface {
 	}
 
 	/**
-	 * @param $route
+	 * @param string $route
 	 * @param array $params
 	 * @return null|string
 	 */

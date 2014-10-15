@@ -76,10 +76,11 @@ class PluginController extends BaseController {
 	}
 
 	/**
-	 * @param $file
+	 * @param string $file
 	 * @param $plugins
 	 * @param $plugin
-	 * @param $to
+	 * @param string $to
+	 * @param string $from
 	 * @throws \Exception
 	 */
 	protected function modifyFile($file, $plugins, $plugin, $from, $to)
@@ -120,8 +121,8 @@ class PluginController extends BaseController {
 	}
 
 	/**
-	 * @param $key
-	 * @param $values
+	 * @param string $key
+	 * @param string $values
 	 * @return string
 	 */
 	protected function addArrayWrapper($key, $values)
