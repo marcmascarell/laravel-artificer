@@ -2,13 +2,13 @@
 
 namespace Mascame\Artificer\Fields\Types\Relations;
 
-use Mascame\Artificer\Artificer;
-use Mascame\Artificer\Fields\GuessableRelation;
-use Mascame\Artificer\Fields\Relationable;
-use Mascame\Artificer\Model\ModelManager;
-use Mascame\Artificer\Model\ModelSettings;
-use Mascame\Formality\Field\Field;
 use URL;
+use Mascame\Artificer\Artificer;
+use Mascame\Formality\Field\Field;
+use Mascame\Artificer\Model\ModelManager;
+use Mascame\Artificer\Fields\Relationable;
+use Mascame\Artificer\Model\ModelSettings;
+use Mascame\Artificer\Fields\GuessableRelation;
 
 class Relation extends Field
 {
@@ -60,8 +60,8 @@ class Relation extends Field
         parent::__construct($name, $value, $options);
 
         $this->modelManager = Artificer::modelManager();
-        $this->modelSettings = $this->modelManager->current();
-        $this->currentModel = $this->modelSettings->model;
+        $this->modelSettings = $this->modelManager->settings();
+        $this->currentModel = $this->modelManager->model();
     }
 
     /**

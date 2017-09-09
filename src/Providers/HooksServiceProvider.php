@@ -2,10 +2,8 @@
 
 namespace Mascame\Artificer\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Mascame\Artificer\Artificer;
-use Mascame\Artificer\Hooks\Hook;
-use Mascame\Artificer\Hooks\PasswordUpdateHook;
+use Illuminate\Support\ServiceProvider;
 
 class HooksServiceProvider extends ServiceProvider
 {
@@ -15,18 +13,9 @@ class HooksServiceProvider extends ServiceProvider
      * @var array
      */
     protected $hooks = [
-        Hook::UPDATING => [
-            PasswordUpdateHook::class,
-        ],
-        Hook::CREATING => [
-            // Hooks
-        ],
-        Hook::UPDATED => [
-            // Hooks
-        ],
-        Hook::CREATED => [
-            // Hooks
-        ],
+//        ModelHook::UPDATING => [
+//            FooHandler::class,
+//        ],
     ];
 
     /**
